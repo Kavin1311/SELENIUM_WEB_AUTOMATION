@@ -120,4 +120,3 @@
 | Blocked        | The test cannot be executed because a prerequisite or dependency is unavailable. |
 | Not Applicable | The test does not apply to the application's available functionality.            |
 
-**Note:** This is the proposed master test case index. Confirm each scenario against the actual application and your existing scripts before marking it as completed. Conditional features, such as multiple-seat selection, snacks, OTP, and ticket download, should only be retained if supported by the website.
