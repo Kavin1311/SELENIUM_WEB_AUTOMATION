@@ -252,4 +252,46 @@ driver.quit()
 ```
 # output:
 <img width="557" height="135" alt="image" src="https://github.com/user-attachments/assets/c8e82b0c-c224-4871-ad12-ed6c47029a2a" />
+# TC-09
+# code: 
+```
+
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+
+driver = webdriver.Chrome()
+
+try:
+    driver.get("https://www.practiceqaautomation.com/tickets")
+    driver.maximize_window()
+    time.sleep(3)
+
+    dropdowns = driver.find_elements(By.TAG_NAME, "select")
+
+    print("Total dropdowns found:", len(dropdowns))
+
+    for index, dropdown in enumerate(dropdowns, start=1):
+        print(f"\nDropdown {index}")
+
+        if dropdown.is_displayed() and dropdown.is_enabled():
+            select = Select(dropdown)
+            options = select.options
+
+            print("Dropdown is visible and enabled")
+            print("Total options:", len(options))
+
+            for option in options:
+                print("Option:", option.text)
+        else:
+            print("Dropdown is hidden or disabled")
+
+finally:
+    driver.quit()
+```
+
+# OUTPUT:
+<img width="706" height="384" alt="image" src="https://github.com/user-attachments/assets/6431ed79-3901-4c5b-927c-cc77a82dad36" />
+
 
