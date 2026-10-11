@@ -252,10 +252,12 @@ driver.quit()
 ```
 # output:
 <img width="557" height="135" alt="image" src="https://github.com/user-attachments/assets/c8e82b0c-c224-4871-ad12-ed6c47029a2a" />
+
 # TC-09
+
 # code: 
 
-
+```
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -290,7 +292,7 @@ try:
 finally:
     driver.quit()
 
-
+```
 # OUTPUT:
 <img width="706" height="384" alt="image" src="https://github.com/user-attachments/assets/6431ed79-3901-4c5b-927c-cc77a82dad36" />
 
